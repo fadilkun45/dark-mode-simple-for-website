@@ -1,0 +1,146 @@
+* {
+    margin : 0 ;
+    padding: 0 ;
+}
+
+.container { 
+    max-width : 600px ;
+    margin : 0 auto ;
+}
+
+
+.kotak-text {
+    margin: 10px auto ;
+    
+}
+
+.kotak-text p {
+    margin: 10px ;
+    text-align: justify ;
+}
+
+.kotak-text h1 {
+    margin: 10px ;
+    text-align: center ;
+}
+
+.kotak-text h3 {
+    text-align: center ;
+    font-size: 30px ;
+    text-transform: capitalize;
+}
+
+.konten-rahasia p {
+    text-align: center ;
+    margin: 20px 0 ;
+}
+
+
+/* mode */
+
+.malam {
+    background-color: black ;
+    color : white ;
+}
+
+.putih {
+    background-color: white ;
+    color : black ;
+}
+
+.hilang {
+    display : none ;
+}
+
+
+
+/* switch */
+
+
+.kotak-keterangan p {
+    font-size: 10px ;
+}
+
+.kotak-keterangan {
+    display: flex ;
+    position : relative ;
+    width : 200px ;
+    height : 40px ;
+    border-radius: 20px ;
+    box-shadow: 0 4px rgba(0, 0, 0, 10%);
+    text-transform: lowercase ;
+    margin: 10px auto ;
+}
+
+.ikon-siang {
+    width : 30px ;
+    text-align: center ;
+    margin : 10px 0 ;
+}
+
+.ikon-malam {
+    width : 30px ;
+    text-align: center ;
+    margin : 10px 0 ;
+}
+
+
+.switch {
+   width : 140px ;
+    display: flex ;
+    position: relative ;
+}
+
+.day {
+    background: cyan ;
+    width : 70px ;
+    height : 40px ;
+    position: absolute ;
+   
+}
+
+.night {
+    background: rgb(37, 34, 34);
+    width : 70px ;
+    height : 40px ;
+    position: absolute ;
+    left : 70px ;
+}
+
+.tempat {
+    width : 120px ;
+    height: 20px ;
+    background: whitesmoke ;
+    position: absolute ;
+    top : 8px ;
+    left : 8px ;
+    border-radius: 20px ;
+    border: 2px black solid ;
+}
+
+.tempat span:nth-child(2) {
+    width : 1px ;
+    height : 15px ;
+    position: absolute ;
+    background: rgba(55, 55, 78, 0.726) ;
+    z-index : 1 ;
+    border-radius: 20px ;
+    padding : 0 8px ;
+    left : 2px ;
+    top : 2.5px ;
+    transition: all 1s ;
+}
+
+.tempat input[type="checkbox"]{
+    opacity: 0 ;
+    position: relative ;
+    width : 180px ;
+    height : 30px ;
+    z-index: 10 ;
+    cursor: pointer;
+}
+
+
+.tempat input:checked ~ span:nth-child(2) {
+    left : 101px ;
+}
